@@ -2,7 +2,7 @@ import XCTest
 @testable import AdventOfCode
 
 final class Day05Tests: XCTestCase {
-  let testData = """
+    let testData = """
     seeds: 79 14 55 13
     
     seed-to-soil map:
@@ -37,19 +37,19 @@ final class Day05Tests: XCTestCase {
     60 56 37
     56 93 4
     """
-  
-  func testPart1() throws {
-    let challenge = Day05(data: testData)
-    let result = challenge.part1()
-    XCTAssertEqual(String(describing: result), "35")
-  }
-  
-  // MARK: Part 2 -
-  
-  func testPart2() throws {
-    let challenge = Day05(data: testData)
-    let result = challenge.part2()
-    XCTAssertEqual(String(describing: result), "46")
-  }
-  
+    
+    func testPart1() throws {
+        let challenge = Day05(data: testData)
+        let result = challenge.part1()
+        XCTAssertEqual(String(describing: result), "35")
+    }
+    
+    // MARK: Part 2 -
+    
+    func testPart2() throws {
+        let challenge = Day05(data: testData)
+        let result = challenge.part2()
+        XCTAssertEqual(String(describing: result), "46")
+    }
+    
 }
